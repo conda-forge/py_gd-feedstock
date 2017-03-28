@@ -11,6 +11,18 @@ Summary: Pythonic wrappers for the libgd graphics rendering library
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/py_gd-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/py_gd-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/py_gd-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/py_gd-feedstock)
+Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py_gd/badges/version.svg)](https://anaconda.org/conda-forge/py_gd)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py_gd/badges/downloads.svg)](https://anaconda.org/conda-forge/py_gd)
+
 Installing py_gd
 ================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `py_gd` available on your platform
 ```
 conda search py_gd --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/py_gd-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/py_gd-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/py_gd-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/py_gd-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py_gd/badges/version.svg)](https://anaconda.org/conda-forge/py_gd)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py_gd/badges/downloads.svg)](https://anaconda.org/conda-forge/py_gd)
 
 
 Updating py_gd-feedstock

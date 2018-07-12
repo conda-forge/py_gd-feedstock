@@ -19,17 +19,18 @@ build:
 
 requirements:
     build:
+        - {{ compiler('c') }}
+    host:
         - python
         - pip
         - libgd {{ libgd_version }}
         - cython
-        - numpy 1.11.*
-        - toolchain
+        - numpy
 
     run:
         - python
         - libgd {{ libgd_version }}
-        - numpy >=1.11
+        - {{ pin_compatible('numpy') }}
 
 test:
     requires:

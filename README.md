@@ -14,14 +14,16 @@ Summary: Pythonic wrappers for the libgd graphics rendering library
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/py_gd-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/py_gd-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/py_gd-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/py_gd-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/py_gd-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/py_gd-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/py_gd-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/py_gd-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py_gd/badges/version.svg)](https://anaconda.org/conda-forge/py_gd)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/py_gd/badges/downloads.svg)](https://anaconda.org/conda-forge/py_gd)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-py_gd-green.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) |
 
 Installing py_gd
 ================

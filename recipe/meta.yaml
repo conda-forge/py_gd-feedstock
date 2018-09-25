@@ -1,6 +1,6 @@
 {% set version = "0.1.8.1" %}
 {% set sha256 = "719bd08a33bf13b5d145c7b4bfd1a3a35cff7f5a57e7f41c63a2f343cf46fd24" %}
-{% set libgd_version = "2.2.4" %}
+{% set libgd_version = "2.2.5" %}
 
 package:
     name: py_gd
@@ -49,3 +49,4 @@ extra:
     recipe-maintainers:
         - ChrisBarker-NOAA
         - jay-hennen
+        - JamesMakela-NOAA

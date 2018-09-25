@@ -1,5 +1,5 @@
-{% set version = "0.1.7.1" %}
-{% set sha256 = "47699ba598570ec4eb2f852a2e7db268767a4d3b9042510259dd4492dfc7dee0" %}
+{% set version = "0.1.8.1" %}
+{% set sha256 = "719bd08a33bf13b5d145c7b4bfd1a3a35cff7f5a57e7f41c63a2f343cf46fd24" %}
 {% set libgd_version = "2.2.4" %}
 
 package:
@@ -13,7 +13,7 @@ source:
 
 build:
     skip: True  # [py3k or win]
-    number: 2
+    number: 0
     script:
         - python -m pip install --no-deps ./
 

@@ -1,52 +1,54 @@
-{% set version = "0.1.8.1" %}
-{% set sha256 = "719bd08a33bf13b5d145c7b4bfd1a3a35cff7f5a57e7f41c63a2f343cf46fd24" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "c349fb509e8b8345b0714db4089b406acd0df76107ced14874edb9431317f546" %}
 {% set libgd_version = "2.2.5" %}
 
 package:
-    name: py_gd
-    version: {{ version }}
+  name: py_gd
+  version: {{ version }}
 
 source:
-    fn: py_gd-{{ version }}.tar.gz
-    url: https://github.com/NOAA-ORR-ERD/py_gd/archive/v{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+  fn: py_gd-{{ version }}.tar.gz
+  url: https://github.com/NOAA-ORR-ERD/py_gd/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-    skip: True  # [py3k or win]
-    number: 1001
-    script:
-        - python -m pip install --no-deps ./
+  skip: true  # [win]
+  number: 0
+  script:
+    - python -m pip install --no-deps ./
 
 requirements:
-    build:
-        - {{ compiler('c') }}
-    host:
-        - python
-        - pip
-        - libgd {{ libgd_version }}
-        - cython
-        - numpy
+  build:
+    - {{ compiler('c') }}
+  host:
+    - python
+    - pip
+    # - libgd {{ libgd_version }}
+    - libgd {{ libgd_version }}
+    - cython
+    - numpy
 
-    run:
-        - python
-        - libgd {{ libgd_version }}
-        - {{ pin_compatible('numpy') }}
+  run:
+    - python
+#    - libgd {{ libgd_version }}
+    - libgd
+    - {{ pin_compatible('numpy') }}
 
 test:
-    requires:
-        - pytest
-    imports:
-        - py_gd
-    commands:
-        - py.test --pyargs py_gd
+  requires:
+    - pytest
+  imports:
+    - py_gd
+  commands:
+    - py.test --pyargs py_gd
 
 about:
-    home: https://github.com/NOAA-ORR-ERD/py_gd
-    license: Public Domain
-    summary: 'Pythonic wrappers for the libgd graphics rendering library'
+  home: https://github.com/NOAA-ORR-ERD/py_gd
+  license: Public Domain
+  summary: Pythonic wrappers for the libgd graphics rendering library
 
 extra:
-    recipe-maintainers:
-        - ChrisBarker-NOAA
-        - jay-hennen
-        - JamesMakela-NOAA
+  recipe-maintainers:
+    - ChrisBarker-NOAA
+    - jay-hennen
+    - JamesMakela-NOAA

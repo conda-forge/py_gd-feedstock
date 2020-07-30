@@ -23,15 +23,13 @@ requirements:
   host:
     - python
     - pip
-    # - libgd {{ libgd_version }}
     - libgd {{ libgd_version }}
     - cython
     - numpy
 
   run:
     - python
-#    - libgd {{ libgd_version }}
-    - libgd
+    - libgd {{ libgd_version }}
     - {{ pin_compatible('numpy') }}
 
 test:

@@ -1,6 +1,6 @@
 {% set version = "1.1.0" %}
 {% set sha256 = "c349fb509e8b8345b0714db4089b406acd0df76107ced14874edb9431317f546" %}
-{% set libgd_version = "2.2.5" %}
+{% set libgd_version = "2.3.0" %}
 
 package:
   name: py_gd

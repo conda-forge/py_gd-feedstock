@@ -1,6 +1,6 @@
-{% set version = "1.1.0" %}
-{% set sha256 = "c349fb509e8b8345b0714db4089b406acd0df76107ced14874edb9431317f546" %}
-{% set libgd_version = "2.2.5" %}
+{% set version = "1.1.1" %}
+{% set sha256 = "af36441272289b54f2eeb9b880043c64d290d35b5b62ffbf72748f2ef7232d27" %}
+{% set libgd_version = "2.3.0" %}
 
 package:
   name: py_gd
@@ -12,10 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: true  # [win]
   number: 0
-  script:
-    - python -m pip install --no-deps ./
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
@@ -42,7 +40,7 @@ test:
 
 about:
   home: https://github.com/NOAA-ORR-ERD/py_gd
-  license: Public Domain
+  license: CC0-1.0
   summary: Pythonic wrappers for the libgd graphics rendering library
 
 extra:

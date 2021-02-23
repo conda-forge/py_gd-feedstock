@@ -12,11 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-#  skip: true  # [win]
   number: 1
   script:
-    - python -m pip install --no-deps ./
-
+    - "{{ PYTHON }} -m pip install --no-deps . -vv"
 requirements:
   build:
     - {{ compiler('c') }}

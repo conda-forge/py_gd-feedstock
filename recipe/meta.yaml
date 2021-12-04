@@ -1,5 +1,5 @@
-{% set version = "1.1.1" %}
-{% set sha256 = "af36441272289b54f2eeb9b880043c64d290d35b5b62ffbf72748f2ef7232d27" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "499fd6366c677eccc09e9db702ce4340a0cee852511af33d50e4ea62faaaec5d" %}
 {% set libgd_version = "2.3.0" %}
 
 package:
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:

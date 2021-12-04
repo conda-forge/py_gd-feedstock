@@ -19,14 +19,14 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
+    - python>=3.8
     - pip
     - libgd {{ libgd_version }}
     - cython
     - numpy
 
   run:
-    - python
+    - python>=3.8
     - libgd {{ libgd_version }}
     - {{ pin_compatible('numpy') }}
 

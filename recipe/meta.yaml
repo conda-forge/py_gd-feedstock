@@ -1,6 +1,6 @@
 {% set version = "2.0.3" %}
 {% set sha256 = "6d07c5af5fb84a87bddd64aaaaf473a0062f3243b76afb791eabd511a7b60917" %}
-{% set libgd_version = "2.3.0" %}
+{% set libgd_version = "2.3.*" %}
 
 package:
   name: py_gd
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: True  # [py<38]
 
@@ -23,12 +23,12 @@ requirements:
     - python
     - pip
     - libgd {{ libgd_version }}
-    - cython
-    - numpy
+    - cython ==0.29.*
+    - numpy >=1.19
 
   run:
     - python
-    - libgd {{ libgd_version }}
+    - {{ pin_compatible('libgd') }}
     - {{ pin_compatible('numpy') }}
 
 test:

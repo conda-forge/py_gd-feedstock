@@ -23,8 +23,8 @@ requirements:
     - python
     - pip
     - libgd {{ libgd_version }}
-    - cython==0.29.*
-    - numpy>=1.19
+    - cython ==0.29.*
+    - numpy >=1.19
 
   run:
     - python

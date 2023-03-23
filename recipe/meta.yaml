@@ -1,5 +1,5 @@
-{% set version = "2.0.3" %}
-{% set sha256 = "6d07c5af5fb84a87bddd64aaaaf473a0062f3243b76afb791eabd511a7b60917" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "817ee7dacb2a2faf252fe8b87e0170eec9922cfe27c177a475e0165a4ca5109e" %}
 {% set libgd_version = "2.3.*" %}
 
 package:
@@ -12,9 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: True  # [py<38 or python_impl == 'pypy']
+  skip: true  # [py<38 or python_impl == 'pypy']
 
 requirements:
   build:

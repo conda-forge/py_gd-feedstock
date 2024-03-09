@@ -18,16 +18,13 @@ build:
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython                                 # [build_platform != target_platform]
-    - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
     - python
     - pip
     - libgd {{ libgd_version }}
-    - cython ==0.29.*
+    - cython
     - numpy
 
   run:

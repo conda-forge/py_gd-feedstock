@@ -1,5 +1,5 @@
-{% set version = "2.2.0" %}
-{% set sha256 = "7dbf523f475fb90dd2acf47d9edbd7f215e90f0a8d59047bae54e6d302a65caf" %}
+{% set version = "2.2.1" %}
+{% set sha256 = "c21d0c7eaaeaafca02aec72d5cda5324ba397a2eaf609ec7613a9f9e7145a5e8" %}
 {% set libgd_version = "2.3.*" %}
 
 package:

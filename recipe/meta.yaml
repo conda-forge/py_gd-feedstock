@@ -1,5 +1,5 @@
-{% set version = "2.2.1" %}
-{% set sha256 = "c21d0c7eaaeaafca02aec72d5cda5324ba397a2eaf609ec7613a9f9e7145a5e8" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "fe25ed8f6a83d5249d000a5c6ec5dc5a835e53a88f471d52a76b6b70caa908d6" %}
 {% set libgd_version = "2.3.*" %}
 
 package:
@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]

@@ -21,12 +21,13 @@ requirements:
   build:
     - {{ compiler('c') }}
     - python                                 # [build_platform != target_platform]
+    - pip
+    - setuptools
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - libgd {{ libgd_version }}              # [build_platform != target_platform]
     - cython >=3
 #    - {{ stdlib('c') }} # this crashed out
-
   host:
     - python
     - pip

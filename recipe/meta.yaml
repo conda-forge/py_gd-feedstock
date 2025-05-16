@@ -1,5 +1,5 @@
-{% set version = "2.3.0" %}
-{% set sha256 = "fe25ed8f6a83d5249d000a5c6ec5dc5a835e53a88f471d52a76b6b70caa908d6" %}
+{% set version = "2.3.1" %}
+{% set sha256 = "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed" %}
 {% set libgd_version = "2.3.*" %}
 
 package:
@@ -12,9 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [py<39]
+  skip: true  # [py<310]
   skip: true  # [python_impl == 'pypy']
 
 requirements:
@@ -32,10 +32,11 @@ requirements:
     - setuptools
     - libgd {{ libgd_version }}
     - cython >=3
-    - numpy
+    - numpy >=2
 
   run:
-    - python
+    - python >=3.10
+    - numpy >=2
     - {{ pin_compatible('libgd') }}
 
 test:

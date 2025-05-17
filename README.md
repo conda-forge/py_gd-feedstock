@@ -179,7 +179,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-py_gd-green.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-py__gd-green.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) |
 
 Installing py_gd
 ================

@@ -35,7 +35,7 @@ requirements:
     - numpy >=2
 
   run:
-    - python >=3.10
+    - python
     - numpy >=2
     - {{ pin_compatible('libgd') }}
 
@@ -50,6 +50,7 @@ test:
 about:
   home: https://github.com/NOAA-ORR-ERD/py_gd
   license: CC0-1.0
+  license_file: LICENSE.txt
   summary: Pythonic wrappers for the libgd graphics rendering library
 
 extra:

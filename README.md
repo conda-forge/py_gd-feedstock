@@ -48,13 +48,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_numpy2.0python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=836&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/py_gd-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy2.0python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_numpy2python3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=836&branchName=main">
@@ -80,13 +73,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=836&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/py_gd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy2.0python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_numpy2.0python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=836&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/py_gd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy2.0python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -118,13 +104,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_numpy2.0python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=836&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/py_gd-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy2.0python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_arm64_numpy2python3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=836&branchName=main">
@@ -153,13 +132,6 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_numpy2.0python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=836&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/py_gd-feedstock?branchName=main&jobName=win&configuration=win%20win_64_numpy2.0python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>win_64_numpy2python3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=836&branchName=main">
@@ -179,7 +151,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-py_gd-green.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-py__gd-green.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/py_gd.svg)](https://anaconda.org/conda-forge/py_gd) |
 
 Installing py_gd
 ================

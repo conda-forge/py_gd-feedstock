@@ -37,7 +37,7 @@ requirements:
 
   run:
     - python
-    - numpy >=2
+    - numpy
     - {{ pin_compatible('libgd') }}
 
 test:

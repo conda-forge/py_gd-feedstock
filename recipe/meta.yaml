@@ -26,13 +26,14 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
     - libgd {{ libgd_version }}              # [build_platform != target_platform]
     - cython >=3                             # [build_platform != target_platform]
+    - setuptools                             # [build_platform != target_platform]
   host:
     - python
     - pip
     - setuptools
     - libgd {{ libgd_version }}
     - cython >=3
-    - numpy >=2
+    - numpy
 
   run:
     - python

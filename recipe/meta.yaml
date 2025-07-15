@@ -35,7 +35,7 @@ requirements:
     - libgd {{ libgd_version }}
     - cython >=3
     - numpy
-    - scikit_build_core
+    - scikit-build-core
     - cython-cmake
 
   run:

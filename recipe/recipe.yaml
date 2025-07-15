@@ -1,0 +1,73 @@
+schema_version: 1
+
+context:
+  version: 2.3.3
+  sha256: 492227ac6d8f30bb70e73d86bcf4580dc5de2683883db5ca02c95803fb54a3be
+  libgd_version: 2.3.*
+
+package:
+  name: py_gd
+  version: ${{ version }}
+
+source:
+  url: https://github.com/NOAA-ORR-ERD/py_gd/archive/v${{ version }}.tar.gz
+  sha256: ${{ sha256 }}
+  file_name: py_gd-${{ version }}.tar.gz
+
+build:
+  number: 0
+  skip: python_impl == 'pypy'
+  script: ${{ PYTHON }} -m pip install -vv --no-deps .
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+    - if: build_platform != target_platform
+      then: python
+    - if: build_platform != target_platform
+      then: cross-python_${{ target_platform }}
+    - if: build_platform != target_platform
+      then: numpy
+    - if: build_platform != target_platform
+      then: libgd ${{ libgd_version }}
+    - if: build_platform != target_platform
+      then: cython >=3
+    - cmake
+    - ninja
+  host:
+    - python
+    - pip
+    - setuptools
+    - libgd ${{ libgd_version }}
+    - cython >=3
+    - numpy
+    - scikit-build-core
+    - cython-cmake
+  run:
+    - python
+    - ${{ pin_compatible('numpy') }}
+    - ${{ pin_compatible('libgd') }}
+
+tests:
+  - python:
+      imports:
+        - py_gd
+  - requirements:
+      run:
+        - pytest
+    script:
+      - pytest --pyargs py_gd
+
+about:
+  license: CC0-1.0
+  license_file: LICENSE.txt
+  summary: Pythonic wrappers for the libgd graphics rendering library
+  homepage: https://github.com/NOAA-ORR-ERD/py_gd
+
+extra:
+  recipe-maintainers:
+    - ChrisBarker-NOAA
+    - jay-hennen
+    - JamesMakela-NOAA
+

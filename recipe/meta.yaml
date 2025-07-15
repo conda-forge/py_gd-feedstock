@@ -27,6 +27,7 @@ requirements:
     - libgd {{ libgd_version }}              # [build_platform != target_platform]
     - cython >=3                             # [build_platform != target_platform]
     - setuptools                             # [build_platform != target_platform]
+
   host:
     - python
     - pip
@@ -34,6 +35,8 @@ requirements:
     - libgd {{ libgd_version }}
     - cython >=3
     - numpy
+    - scikit_build_core
+    - cython-cmake
 
   run:
     - python

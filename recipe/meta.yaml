@@ -27,6 +27,8 @@ requirements:
     - libgd {{ libgd_version }}              # [build_platform != target_platform]
     - cython >=3                             # [build_platform != target_platform]
     - setuptools                             # [build_platform != target_platform]
+    - cmake
+    - ninja
 
   host:
     - python

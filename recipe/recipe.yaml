@@ -21,15 +21,12 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
     - if: build_platform != target_platform
-      then: python
-    - if: build_platform != target_platform
-      then: cross-python_${{ target_platform }}
-    - if: build_platform != target_platform
-      then: numpy
-    - if: build_platform != target_platform
-      then: libgd ${{ libgd_version }}
-    - if: build_platform != target_platform
-      then: cython >=3
+      then:
+        - cross-python_${{ target_platform }}
+        - python
+        - numpy
+        - cython >=3
+        - libgd ${{ libgd_version }}
     - cmake
     - ninja
   host:

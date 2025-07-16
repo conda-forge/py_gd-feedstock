@@ -27,6 +27,7 @@ requirements:
         - numpy
         - cython >=3
         - libgd ${{ libgd_version }}
+    - make
     - cmake
     - ninja
   host:

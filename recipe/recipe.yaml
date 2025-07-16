@@ -45,7 +45,7 @@ requirements:
     - cython-cmake
   run:
     - python
-    - numpy >=2
+    - numpy
     - ${{ pin_compatible('libgd') }}
 
 tests:

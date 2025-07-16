@@ -11,7 +11,6 @@ package:
 source:
   url: https://github.com/NOAA-ORR-ERD/py_gd/archive/v${{ version }}.tar.gz
   sha256: 492227ac6d8f30bb70e73d86bcf4580dc5de2683883db5ca02c95803fb54a3be
-  file_name: py_gd-${{ version }}.tar.gz
 
 build:
   number: 0

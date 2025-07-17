@@ -41,7 +41,7 @@ requirements:
     - scikit-build-core
     - cython-cmake
   run:
-    - python >=3.10
+    - python
     - numpy
     - ${{ pin_compatible('libgd') }}
 
